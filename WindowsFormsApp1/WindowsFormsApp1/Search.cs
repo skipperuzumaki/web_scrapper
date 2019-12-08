@@ -48,6 +48,7 @@ namespace WindowsFormsApp1
                 t.AddRange(value);
                 tv.Add(t);
             }
-        }
+            MovieDisplay md = new MovieDisplay();
+            
     }
 }

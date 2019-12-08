@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MovieDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieDisplay.Designer.cs">
+      <DependentUpon>MovieDisplay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Search.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MovieDisplay.resx">
+      <DependentUpon>MovieDisplay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
     </EmbeddedResource>
