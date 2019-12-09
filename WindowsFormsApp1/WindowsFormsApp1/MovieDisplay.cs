@@ -43,6 +43,7 @@ namespace WindowsFormsApp1
                 Title.Text = tv[i][0];
                 Release.Text = tv[i][1];
                 Summary.Text = tv[i][4];
+                Cover.Image = Image.FromFile("tv\\" + i + ".jpg");
             }
         }
 
