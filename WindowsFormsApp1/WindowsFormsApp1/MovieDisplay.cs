@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,7 +43,6 @@ namespace WindowsFormsApp1
                 Title.Text = tv[i][0];
                 Release.Text = tv[i][1];
                 Summary.Text = tv[i][4];
-                Cover.Image = Image.FromFile("tv\\" + i + ".jpg");
             }
         }
 

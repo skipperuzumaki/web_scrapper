@@ -13,10 +13,10 @@ with open('movies.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
     for row in spamreader:
         Dwnld('.\movies\\'+str(i),row[2])
-        i++
+        i+=1
 i=0
 with open('tv.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
     for row in spamreader:
         Dwnld('.\\tovies\\'+str(i),row[2])
-        i++
+        i+=1

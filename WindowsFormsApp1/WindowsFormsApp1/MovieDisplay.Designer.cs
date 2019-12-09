@@ -33,12 +33,11 @@
             this.Previous = new System.Windows.Forms.Button();
             this.Next = new System.Windows.Forms.Button();
             this.Cover = new System.Windows.Forms.PictureBox();
-            this.Title = new System.Windows.Forms.LinkLabel();
             this.Release = new System.Windows.Forms.Label();
             this.Summary = new System.Windows.Forms.Label();
             this.Visit = new System.Windows.Forms.Button();
             this.Download = new System.Windows.Forms.Button();
-            this.Details = new System.Windows.Forms.Button();
+            this.Title = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Cover)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,21 +90,6 @@
             this.Cover.TabIndex = 4;
             this.Cover.TabStop = false;
             // 
-            // Title
-            // 
-            this.Title.ActiveLinkColor = System.Drawing.Color.Black;
-            this.Title.AutoSize = true;
-            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title.LinkColor = System.Drawing.Color.Black;
-            this.Title.Location = new System.Drawing.Point(260, 62);
-            this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(149, 64);
-            this.Title.TabIndex = 5;
-            this.Title.TabStop = true;
-            this.Title.Text = "Movie";
-            this.Title.UseCompatibleTextRendering = true;
-            this.Title.VisitedLinkColor = System.Drawing.Color.Black;
-            // 
             // Release
             // 
             this.Release.AutoSize = true;
@@ -147,27 +131,26 @@
             this.Download.Text = "Download";
             this.Download.UseVisualStyleBackColor = true;
             // 
-            // Details
+            // Title
             // 
-            this.Details.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Details.Location = new System.Drawing.Point(476, 409);
-            this.Details.Name = "Details";
-            this.Details.Size = new System.Drawing.Size(136, 29);
-            this.Details.TabIndex = 10;
-            this.Details.Text = "More Details";
-            this.Details.UseVisualStyleBackColor = true;
+            this.Title.AutoSize = true;
+            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.Location = new System.Drawing.Point(273, 62);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(152, 55);
+            this.Title.TabIndex = 10;
+            this.Title.Text = "Movie";
             // 
             // MovieDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 450);
-            this.Controls.Add(this.Details);
+            this.Controls.Add(this.Title);
             this.Controls.Add(this.Download);
             this.Controls.Add(this.Visit);
             this.Controls.Add(this.Summary);
             this.Controls.Add(this.Release);
-            this.Controls.Add(this.Title);
             this.Controls.Add(this.Cover);
             this.Controls.Add(this.Next);
             this.Controls.Add(this.Previous);
@@ -189,11 +172,10 @@
         private System.Windows.Forms.Button Previous;
         private System.Windows.Forms.Button Next;
         private System.Windows.Forms.PictureBox Cover;
-        private System.Windows.Forms.LinkLabel Title;
         private System.Windows.Forms.Label Release;
         private System.Windows.Forms.Label Summary;
         private System.Windows.Forms.Button Visit;
         private System.Windows.Forms.Button Download;
-        private System.Windows.Forms.Button Details;
+        private System.Windows.Forms.Label Title;
     }
 }

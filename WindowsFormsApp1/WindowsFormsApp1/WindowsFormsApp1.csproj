@@ -92,6 +92,7 @@
     <Content Include="Downloader.py" />
     <Content Include="images.py" />
     <Content Include="Search.py" />
+    <Content Include="SeasonList.py" />
     <Content Include="TvDetails.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
