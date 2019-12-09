@@ -30,6 +30,8 @@ namespace WindowsFormsApp1
             File.WriteAllText(".\\searchphrase.txt", search);
             System.Diagnostics.Process.Start(".\\search.py");
             System.Threading.Thread.Sleep(5000);
+            System.Diagnostics.Process.Start(".\\images.py");
+            System.Threading.Thread.Sleep(5000);
             List<List<string>> movies = new List<List<string>>();
             List<List<string>> tv = new List<List<string>>();
             string moviedata = File.ReadAllText(".\\movies.csv");
@@ -48,7 +50,9 @@ namespace WindowsFormsApp1
                 t.AddRange(value);
                 tv.Add(t);
             }
-            MovieDisplay md = new MovieDisplay();
+            MovieDisplay md = new MovieDisplay(movies,tv);
+            md.Show();
+            this.Hide();
         }
     }
 }

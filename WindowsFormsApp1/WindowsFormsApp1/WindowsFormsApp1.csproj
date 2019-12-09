@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Downloader.py" />
+    <Content Include="images.py" />
     <Content Include="Search.py" />
     <Content Include="TvDetails.py" />
   </ItemGroup>

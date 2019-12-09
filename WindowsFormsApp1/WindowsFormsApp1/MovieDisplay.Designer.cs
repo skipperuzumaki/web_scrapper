@@ -36,18 +36,22 @@
             this.Title = new System.Windows.Forms.LinkLabel();
             this.Release = new System.Windows.Forms.Label();
             this.Summary = new System.Windows.Forms.Label();
+            this.Visit = new System.Windows.Forms.Button();
+            this.Download = new System.Windows.Forms.Button();
+            this.Details = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Cover)).BeginInit();
             this.SuspendLayout();
             // 
             // TV
             // 
             this.TV.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TV.Location = new System.Drawing.Point(662, 12);
+            this.TV.Location = new System.Drawing.Point(758, 12);
             this.TV.Name = "TV";
             this.TV.Size = new System.Drawing.Size(126, 43);
             this.TV.TabIndex = 0;
             this.TV.Text = "Tv Shows";
             this.TV.UseVisualStyleBackColor = true;
+            this.TV.Click += new System.EventHandler(this.TV_Click);
             // 
             // Header
             // 
@@ -67,6 +71,7 @@
             this.Previous.TabIndex = 2;
             this.Previous.Text = "Prev";
             this.Previous.UseVisualStyleBackColor = true;
+            this.Previous.Click += new System.EventHandler(this.Previous_Click);
             // 
             // Next
             // 
@@ -76,6 +81,7 @@
             this.Next.TabIndex = 3;
             this.Next.Text = "Next";
             this.Next.UseVisualStyleBackColor = true;
+            this.Next.Click += new System.EventHandler(this.Next_Click);
             // 
             // Cover
             // 
@@ -93,10 +99,11 @@
             this.Title.LinkColor = System.Drawing.Color.Black;
             this.Title.Location = new System.Drawing.Point(260, 62);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(152, 55);
+            this.Title.Size = new System.Drawing.Size(149, 64);
             this.Title.TabIndex = 5;
             this.Title.TabStop = true;
             this.Title.Text = "Movie";
+            this.Title.UseCompatibleTextRendering = true;
             this.Title.VisitedLinkColor = System.Drawing.Color.Black;
             // 
             // Release
@@ -111,18 +118,53 @@
             // 
             // Summary
             // 
-            this.Summary.AutoSize = true;
-            this.Summary.Location = new System.Drawing.Point(273, 141);
+            this.Summary.AllowDrop = true;
+            this.Summary.Location = new System.Drawing.Point(270, 141);
             this.Summary.Name = "Summary";
-            this.Summary.Size = new System.Drawing.Size(130, 13);
+            this.Summary.Size = new System.Drawing.Size(614, 265);
             this.Summary.TabIndex = 7;
-            this.Summary.Text = "lorem ipsum dolores vita lo";
+            this.Summary.Text = "Summary";
+            this.Summary.UseCompatibleTextRendering = true;
+            // 
+            // Visit
+            // 
+            this.Visit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Visit.Location = new System.Drawing.Point(270, 409);
+            this.Visit.Name = "Visit";
+            this.Visit.Size = new System.Drawing.Size(75, 29);
+            this.Visit.TabIndex = 8;
+            this.Visit.Text = "Visit";
+            this.Visit.UseVisualStyleBackColor = true;
+            this.Visit.Click += new System.EventHandler(this.Visit_Click);
+            // 
+            // Download
+            // 
+            this.Download.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Download.Location = new System.Drawing.Point(351, 409);
+            this.Download.Name = "Download";
+            this.Download.Size = new System.Drawing.Size(118, 29);
+            this.Download.TabIndex = 9;
+            this.Download.Text = "Download";
+            this.Download.UseVisualStyleBackColor = true;
+            // 
+            // Details
+            // 
+            this.Details.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Details.Location = new System.Drawing.Point(476, 409);
+            this.Details.Name = "Details";
+            this.Details.Size = new System.Drawing.Size(136, 29);
+            this.Details.TabIndex = 10;
+            this.Details.Text = "More Details";
+            this.Details.UseVisualStyleBackColor = true;
             // 
             // MovieDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(896, 450);
+            this.Controls.Add(this.Details);
+            this.Controls.Add(this.Download);
+            this.Controls.Add(this.Visit);
             this.Controls.Add(this.Summary);
             this.Controls.Add(this.Release);
             this.Controls.Add(this.Title);
@@ -150,5 +192,8 @@
         private System.Windows.Forms.LinkLabel Title;
         private System.Windows.Forms.Label Release;
         private System.Windows.Forms.Label Summary;
+        private System.Windows.Forms.Button Visit;
+        private System.Windows.Forms.Button Download;
+        private System.Windows.Forms.Button Details;
     }
 }
